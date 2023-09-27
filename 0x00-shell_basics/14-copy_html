@@ -1,0 +1,7 @@
+#!/bin/bash
+
+src_dir=$(pwd)
+dest_dir=$(dirname "$src_dir")
+
+find "$src_dir" -name "*.html" -exec cp -u '{}' "$dest_dir" \;
+

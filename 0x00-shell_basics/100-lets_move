@@ -1,0 +1,13 @@
+#!/bin/bash
+
+src_dir=$(pwd)
+dest_dir="/tmp/u"
+
+mkdir -p "$dest_dir"
+
+for file in "$src_dir"/*; do
+  if [[ -f "$file" && "$(basename "$file")" =~ ^[A-Z].* ]]; then
+    mv "$file" "$dest_dir"
+  fi
+done
+

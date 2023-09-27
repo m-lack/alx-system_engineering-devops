@@ -1,0 +1,6 @@
+#!/bin/bash
+
+permissions=$(stat -c "%a" olleh)
+
+chmod "$permissions" hello
+

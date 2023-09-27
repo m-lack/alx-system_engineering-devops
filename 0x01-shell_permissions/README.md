@@ -1,3 +1,4 @@
+#!/bin/bash
 Script to Switch User to Betty (8 characters): 0-iam_betty
 
 Script to Print Effective Username of Current User: 1-who_am_i
@@ -31,3 +32,4 @@ Script to Change Owner and Group Owner to Vincent and Staff: 100-change_owner_an
 Script to Change Owner and Group Owner of "_hello" to Vincent and Staff: 101-symbolic_link_permissions
 
 Script to Change Owner of "hello" to Betty (if owned by Guillaume): 102-if_only
+

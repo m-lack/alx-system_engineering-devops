@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z "$BREATH" ] || [ -z "$LOVE" ]; then
+  echo "Both BREATH and LOVE environment variables must be set."
+else
+  result=$((BREATH ** LOVE))
+
+  echo "$result"
+fi
+

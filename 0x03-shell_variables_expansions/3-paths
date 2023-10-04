@@ -1,0 +1,13 @@
+#!/bin/bash
+
+IFS=':' read -ra PATH_ARRAY <<< "$PATH"
+count=0
+
+for dir in "${PATH_ARRAY[@]}"; do
+    if [ -n "$dir" ]; then
+        count=$((count + 1))
+    fi
+done
+
+echo "$count"
+

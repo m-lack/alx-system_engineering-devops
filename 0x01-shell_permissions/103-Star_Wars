@@ -1,9 +1,2 @@
 #!/bin/bash
-
-if ! command -v telnet &> /dev/null; then
-    echo "Error: Telnet is not installed. Please install telnet to watch Star Wars in the terminal."
-    exit 1
-fi
-
 telnet towel.blinkenlights.nl
-

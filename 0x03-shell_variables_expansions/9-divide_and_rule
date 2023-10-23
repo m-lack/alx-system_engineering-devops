@@ -1,10 +1,2 @@
 #!/bin/bash
-
-if [ -z "$DIVIDE" ]; then
-  echo "DIVIDE is not set or is empty."
-else
-  result=$((POWER / DIVIDE))
-  
-  echo "$result"
-fi
-
+echo $((POWER / DIVIDE))

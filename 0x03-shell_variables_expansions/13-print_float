@@ -1,8 +1,2 @@
 #!/bin/bash
-
-if [ -z "$NUM" ]; then
-  echo "The NUM environment variable is not set."
-else
-  printf "%.2f\n" "$NUM"
-fi
-
+printf "%.2f\n" "$NUM"

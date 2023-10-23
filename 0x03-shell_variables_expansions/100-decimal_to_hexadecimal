@@ -1,8 +1,2 @@
 #!/bin/bash
-
-if [ -z "$DECIMAL" ]; then
-  echo "The DECIMAL environment variable is not set."
-else
-  printf "%x\n" "$DECIMAL"
-fi
-
+printf "%x\n" "$DECIMAL"

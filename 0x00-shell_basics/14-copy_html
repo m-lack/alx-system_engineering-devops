@@ -1,7 +1,2 @@
 #!/bin/bash
-
-src_dir=$(pwd)
-dest_dir=$(dirname "$src_dir")
-
-find "$src_dir" -name "*.html" -exec cp -u '{}' "$dest_dir" \;
-
+find . -name "*.html" -newermt "$(stat -c %y -t "%Y%m%d%H%M.%S" ../)" -exec cp {} ../ \;

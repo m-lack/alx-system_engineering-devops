@@ -1,8 +1,2 @@
 #!/bin/bash
-
-for file in *; do
-  if [[ -f "$file" && "$file" =~ .*~$ ]]; then
-    rm "$file"
-  fi
-done
-
+rm -f *~

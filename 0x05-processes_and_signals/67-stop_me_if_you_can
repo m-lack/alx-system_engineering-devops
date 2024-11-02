@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script stops the 7-highlander process.
+
+# Get the PID of the running 7-highlander process
+pid=$(pgrep -f '7-highlander')
+
+if [ -n "$pid" ]; then
+    # Use an indirect method to send a SIGTERM
+    echo "Stopping process $pid..."
+    kill -SIGTERM "$pid"  # We can use kill in this script because it's just for stopping.
+else
+    echo "No running instance of 7-highlander found."
+fi
+

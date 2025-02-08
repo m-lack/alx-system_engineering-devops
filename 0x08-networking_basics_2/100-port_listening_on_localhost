@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script listens on port 98 on localhost and displays any incoming text.
+
+# Start listening on port 98 on localhost
+nc -l -p 98 -s 127.0.0.2
+
